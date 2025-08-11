@@ -69,18 +69,20 @@ class Circle : Shape
         Console.WriteLine($"Circle with radius: {Radius}");
     }
 }
+/workspaces/csharps/csharps/Program.cs(3,16): error CS0101: The namespace '<global namespace>' already contains a definition for 'Shape' [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(31,7): error CS0101: The namespace '<global namespace>' already contains a definition for 'Square' [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(52,7): error CS0101: The namespace '<global namespace>' already contains a definition for 'Circle' [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(9,12): error CS0111: Type 'Shape' already defines a member called 'Shape' with the same parameter types [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(16,6): error CS0111: Type 'Shape' already defines a member called '~Shape' with the same parameter types [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(22,28): error CS0111: Type 'Shape' already defines a member called 'GetArea' with the same parameter types [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(25,25): error CS0111: Type 'Shape' already defines a member called 'DisplayInfo' with the same parameter types [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/aksjdh.cs(31,7): error CS0534: 'Square' does not implement inherited abstract member 'Shape.GetArea()' [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(35,12): error CS0111: Type 'Square' already defines a member called 'Square' with the same parameter types [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(40,28): error CS0111: Type 'Square' already defines a member called 'GetArea' with the same parameter types [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(45,26): error CS0111: Type 'Square' already defines a member called 'DisplayInfo' with the same parameter types [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/aksjdh.cs(52,7): error CS0534: 'Circle' does not implement inherited abstract member 'Shape.GetArea()' [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(56,12): error CS0111: Type 'Circle' already defines a member called 'Circle' with the same parameter types [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(61,28): error CS0111: Type 'Circle' already defines a member called 'GetArea' with the same parameter types [/workspaces/csharps/csharps/csharps.csproj]
+/workspaces/csharps/csharps/Program.cs(66,26): error CS0111: Type 'Circle' already defines a member called 'DisplayInfo' with the same parameter types [/workspaces/csharps/csharps/csharps.csproj]
 
-class Program
-{
-    static void Main()
-    {
-        Shape iskever = new Square("yellow", 10);
-        Shape bilog = new Circle("green", 5);
-
-        iskever.DisplayInfo();
-        Console.WriteLine("Area: " + iskever.GetArea());
-
-        bilog.DisplayInfo();
-        Console.WriteLine("Area: " + bilog.GetArea());
-    }
-}
+The build failed. Fix the build errors and run again.
